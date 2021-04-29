@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+div, section, label, input {
+  box-sizing: border-box;
+}
 code {
   text-align: left!important;
   font-family: 'Courier New', Courier, monospace;
@@ -6,4 +9,9 @@ code {
 
 pre {
   margin: 0;
+}
+
+.section {
+  margin-bottom: 2rem;
+  text-align: center;
 }

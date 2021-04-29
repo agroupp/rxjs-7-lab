@@ -1,0 +1,16 @@
+<section class="section">
+  <div class="row checkbox-row">
+    <label><input type="checkbox" [formControl]="isSharingCtrl">Turn sharing on</label>
+    <span>Total mappings is <b>{{ mappingsCount }}</b></span>
+  </div>
+  <div class="row">
+    <app-card title="Subscription 1" [value]="ticker$ | async"></app-card>
+    <app-card title="Subscription 2" [value]="ticker$ | async"></app-card>
+  </div>
+</section>
+
+<section class="section">
+  <div class="row">
+    <app-card title="Subscription 3 (delayed)" [value]="delayedTicker$ | async"></app-card>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.checkbox-row {
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
