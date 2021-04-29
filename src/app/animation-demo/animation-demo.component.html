@@ -1,0 +1,14 @@
+<div class="player">
+  <button class="play" (click)="play()" [disabled]="!isReady" *ngIf="!isPlaying">Play</button>
+  <button class="play" (click)="pause()" *ngIf="isPlaying">Pause</button>
+  <div class="scale">
+    <app-scale [progress]="(progressStd$ | async) || 0"></app-scale>
+  </div>
+</div>
+<div class="player">
+  <button class="play" (click)="play()" [disabled]="!isReady" *ngIf="!isPlaying">Play</button>
+  <button class="play" (click)="pause()" *ngIf="isPlaying">Pause</button>
+  <div class="scale">
+    <app-scale [progress]="(progressAdv$ | async) || 0"></app-scale>
+  </div>
+</div>

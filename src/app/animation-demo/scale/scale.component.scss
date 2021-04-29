@@ -1,0 +1,18 @@
+.layer-0 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ededed;
+
+  .layer-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #fff, #CD5C5C, #fff);
+    transform-origin: left;
+  }
+}
