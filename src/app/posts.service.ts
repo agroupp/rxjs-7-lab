@@ -21,8 +21,8 @@ export class PostsService {
     return this.http.get<Post[]>(`https://jsonplaceholder.typicode.com/posts`);
   }
 
-  nullResponse(): Observable<Post[] | null> {
-    return of(null);
+  emptyResponse(): Observable<unknown> {
+    return of();
   }
 
   errorResponse(): Observable<Post[]> {
